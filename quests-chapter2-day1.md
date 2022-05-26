@@ -16,6 +16,8 @@ pub contract JacobTucker {
 }
 ```
 
+![JacobTucker Smart Contract](https://github.com/gauchoide/emerald-academy-bootcamp/blob/main/emerald-bootcamp-quests-c2d1-smart.jpg)
+
 
 2. Check that your variable is actually equals "the best" by executing a script to read that variable. Include a screenshot of the output
 
@@ -26,4 +28,6 @@ pub fun main(): String {
     return JacobTucker.is
 }
 ```
+
+![JacobTucker Script](https://github.com/gauchoide/emerald-academy-bootcamp/blob/main/emerald-bootcamp-quests-c2d1-script.jpg)
 
