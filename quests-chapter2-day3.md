@@ -32,14 +32,17 @@ pub fun main(): String {        // notice the return value is NOT an optional ty
 ```
 
 4. Using this picture below, explain...
-  1. What the error message means
+  
+  * What the error message means
   ```
     mismatched types. expected `String`, got `String?` 
   ```
     The return value of the dictionary in the function is an optional, and thus it can be a `String` or `nil`.
-  2. Why we're getting this error
+  
+  * Why we're getting this error
     We are getting two types (`string` or `nil`) for the return value while specifiying it would be `String`. 
-  3. How to fix it
+
+  * How to fix it
     As the return value is optional, we need to force-unwrap `thing[0x03]`, like:
   ```
   pub fun main(): String {
@@ -48,14 +51,13 @@ pub fun main(): String {        // notice the return value is NOT an optional ty
   }
   ```
 
-Or specify the return value can be optional:
+  * Or specify the return value can be optional:
 
-
-```
-pub fun main(): String? {  // we specify the return value is an optional type
-    let thing: {Address: String} = {0x01: "One", 0x02: "Two", 0x03: "Three"}
-    return thing[0x03]
-}
-```
+  ```
+  pub fun main(): String? {  // we specify the return value is an optional type
+      let thing: {Address: String} = {0x01: "One", 0x02: "Two", 0x03: "Three"}
+      return thing[0x03]
+  }
+  ```
 
 
