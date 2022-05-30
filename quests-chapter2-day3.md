@@ -32,6 +32,8 @@ pub fun main(): String {        // notice the return value is NOT an optional ty
 ```
 
 4. Using this picture below, explain...
+
+
   4.1. What the error message means
 
 ```
